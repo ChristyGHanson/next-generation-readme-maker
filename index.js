@@ -48,13 +48,13 @@ function initApplication() {
         },
         {
             type: 'list',
-            message: 'For licenses, please type one of the following: MIT, Apache, Mozilla, GNU, Boost, TSC, ISC',
+            message: 'For licenses, please type one of the following (Use the UP and DOWN arrow keys. Press Enter to select the license.): ',
             name: 'license',
             choices: ['MIT', 'Apache', 'Mozilla', 'GNU', 'Boost', 'ISC']
         },
         {
             type: 'input',
-            message: 'How can other developers contribute to this repo or project?',
+            message: 'How can other developers contribute to this repo or project?: ',
             name: 'contributing'
         },
         {
@@ -69,7 +69,7 @@ function initApplication() {
         },
         {
             type: 'input',
-            message: 'Type your email. This will be added at the end of the README.',
+            message: 'Type your email. This will be added at the end of the README.: ',
             name: 'emailcontact'
         }
     ])
