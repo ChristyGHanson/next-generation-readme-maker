@@ -20,10 +20,12 @@
 ## Description
   
 This app generates README files in Markdown for the developer's convenience.
+
+* UW Bootcamp Graders: Visit this [Google Drive link](https://drive.google.com/file/d/1htyITB3auNGm792gc6UhbXBmXR-nLYdw/view) to view my demo video for Challenge 9. 
   
 ## Installation
   
-Visit the repo here: https://github.com/ChristyGHanson/next-generation-readme-maker
+Visit my repo and fork the code to your own repository. That way, you can use it and customize it for yourself. Install Node by running npm install in the terminal after you clone your forked version from your own repository. Here is the URL.: https://github.com/ChristyGHanson/next-generation-readme-maker
     
 ## Usage
   
