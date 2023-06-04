@@ -1,12 +1,13 @@
-# title
-    
-## License
+# Next Generation README Maker
+## License Badge
 
-![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg) [Click here.](https://www.gnu.org/licenses/gpl-3.0)
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) [Click to view on the web.](https://opensource.org/licenses/MIT) 
    
 
 ## Table of Contents
 
+* [License Badge](#license-badge)
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -14,33 +15,36 @@
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
+
   
 ## Description
   
-desc
+This app generates README files in Markdown for the developer's convenience.
   
 ## Installation
   
-lorem
+Visit the repo here: https://github.com/ChristyGHanson/next-generation-readme-maker
     
 ## Usage
   
-ipsum
+You may use this app to generate new README files in MD for your own coding projects.
 
 ## License
 
-GNU
+MIT
+
+I selected MIT from a list of licenses in this section.
   
 ## Contributing
   
-asdf
+Submit a PR. Alternatively, you can contact me directly. See the Questions section for my contact information.
   
 ## Tests
   
-asdf
+To test this app, please fork this repo to your own repository.
   
 ## Questions
   
-For any questions, message me on GitHub: [ChristyGHanson](https://github.com/ChristyGHanson)
+For any further questions, message me on GitHub: [ChristyGHanson](https://github.com/ChristyGHanson)
 
 Alternatively, you can send me an email: [chrsthnsn@gmail.com](mailto:chrsthnsn@gmail.com)

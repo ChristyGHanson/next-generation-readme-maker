@@ -1,10 +1,10 @@
-// TODO: Include packages needed for this application
-//Download Inquirer
+
+// This downloads Inquirer.
 const inquirer = require('inquirer');
 const fs = require('fs');
 const readmeMarkdown = require('./utils/markdown-generation.js')
 
-// This is an array of questions for user input
+// This is an array of questions for user input.
 // This function will write the Markdown content to a file. 
 function writeToFile(fileName, data) {
     // for(const question of data ){
@@ -51,6 +51,11 @@ function initApplication() {
             message: 'For licenses, please type one of the following (Use the UP and DOWN arrow keys. Press Enter to select the license.): ',
             name: 'license',
             choices: ['MIT', 'Apache', 'Mozilla', 'GNU', 'Boost', 'ISC']
+        },
+        {
+            type: 'input',
+            message: 'Explain which license the application is covered under.: ',
+            name: 'licensenotice',
         },
         {
             type: 'input',

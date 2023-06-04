@@ -1,51 +1,49 @@
-// This function returns a license badge based on which license is passed in
+// licenseBadge: This returns a license badge using Markdown.
 // If there is no license, return an empty string.
-function renderLicenseBadge(license) {
+function licenseBadge(license) {
     if (license.length === 0) {
         return ""
     }
     else if (license == "MIT") {
-        return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
+        return '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'
     }
     else if (license == "Apache") {
-        return `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`
+        return '![License: Apache](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'
     }
     else if (license == "Mozilla") {
-        return `![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)`
+        return '![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)'
     }
     else if (license == "GNU") {
-        return `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`
+        return '![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)'
     }
     else if (license == "Boost") {
-        return `![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)`
+        return '![License: Boost](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)'
     }
     else if (license == "ISC") {
-        return `![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)`
+        return '![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)'
     }
 }
-// The function returns the license link
-// If there is no license, the program returns an empty string.
-function renderLicenseLink(license) {
+// licenseLink: Function generates a URL hotlink to a license in this list using Markdown.
+function licenseLink(license) {
     if (license.length === 0) {
-        return ""
     }
     else if (license == "MIT") {
-        return ' [Click here.](https://opensource.org/licenses/MIT)'
+        return ' [Click to view on the web.](https://opensource.org/licenses/MIT) '
     }
     else if (license == "Apache") {
-        return ' [Click here.](https://opensource.org/licenses/Apache-2.0)'
+        return ' [Click to view on the web.](https://opensource.org/licenses/Apache-2.0) '
     }
     else if (license == "Mozilla") {
-        return ' [Click here.](https://opensource.org/licenses/MPL-2.0)'
+        return ' [Click to view on the web.](https://opensource.org/licenses/MPL-2.0) '
     }
     else if (license == "GNU") {
-        return ' [Click here.](https://www.gnu.org/licenses/gpl-3.0)'
+        return ' [Click to view on the web.](https://www.gnu.org/licenses/gpl-3.0) '
     }
     else if (license == "Boost") {
-        return ' [Click here.](https://www.boost.org/LICENSE_1_0.txt)'
+        return ' [Click to view on the web.](https://www.boost.org/LICENSE_1_0.txt) '
     }
     else if (license == "ISC") {
-        return ' [Click here.](https://opensource.org/licenses/ISC)'
+        return ' [Click to view on the web.](https://opensource.org/licenses/ISC) '
     } else {
         return ''
     }
@@ -54,12 +52,13 @@ function renderLicenseLink(license) {
 // This function will return the license section of the README file.
 // If there is no license, an empty string will be returned instead. 
 // Make sure the strings are fully aligned left.
-function renderLicenseSection(license) {
-    if (license.length === 0) { return "" }
+function licenseSection(license) {
+    if (license.length === 0) {
+        return ''
+    }
     else {
-        return `## License
-
-${renderLicenseBadge(license)}${renderLicenseLink(license)}
+        return `
+${licenseBadge(license)}${licenseLink(license)}
   `
     }
 };
@@ -68,11 +67,13 @@ ${renderLicenseBadge(license)}${renderLicenseLink(license)}
 // The Table of Contents will populate in the markdown that is generated. 
 function markdownGenerate(data) {
     return `# ${data.title}
-    
-${renderLicenseSection(data.license)} 
+## License Badge
+
+${licenseSection(data.license)} 
 
 ## Table of Contents
 
+* [License Badge](#license-badge)
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -80,6 +81,7 @@ ${renderLicenseSection(data.license)}
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
+
   
 ## Description
   
@@ -96,6 +98,8 @@ ${data.usage}
 ## License
 
 ${data.license}
+
+${data.licensenotice}
   
 ## Contributing
   
@@ -107,7 +111,7 @@ ${data.tests}
   
 ## Questions
   
-For any questions, message me on GitHub: [${data.githubusername}](https://github.com/${data.githubusername})
+For any further questions, message me on GitHub: [${data.githubusername}](https://github.com/${data.githubusername})
 
 Alternatively, you can send me an email: [${data.emailcontact}](mailto:${data.emailcontact})`;
 };
