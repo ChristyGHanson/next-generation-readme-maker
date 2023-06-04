@@ -1,5 +1,5 @@
 // This function returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// If there is no license, return an empty string.
 function renderLicenseBadge(license) {
     if (license.length === 0) {
         return ""
@@ -25,6 +25,7 @@ function renderLicenseBadge(license) {
 }
 // The function returns the license link
 // If there is no license, the program returns an empty string.
+// Make sure the strings are fully aligned left so the README will generate properly.
 function renderLicenseLink(license) {
     if (license.length === 0) {
         return ""
@@ -53,6 +54,7 @@ function renderLicenseLink(license) {
 
 // This function will return the license section of the README file.
 // If there is no license, an empty string will be returned instead. 
+// Make sure the strings are fully aligned left so the README will generate properly.
 function renderLicenseSection(license) {
     if (license.length === 0) { return "" }
     else {
@@ -106,7 +108,7 @@ ${data.tests}
   
 ## Questions
   
-For any questions, message me on GitHub: [${data.githubusername}](https://github.com/${data.githubusername})
+For any questions, message me on GitHub: [${data.githubusername}](https://github.com/${data.githubusername})\n
 
 Alternatively, you can send me an email: [${data.emailcontact}](mailto:${data.emailcontact})`;
 };

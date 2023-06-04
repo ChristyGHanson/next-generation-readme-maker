@@ -50,7 +50,7 @@ function initApplication() {
             type: 'list',
             message: 'For licenses, please type one of the following: MIT, Apache, Mozilla, GNU, Boost, TSC, ISC',
             name: 'license',
-            choices: ['MIT', 'Apache']
+            choices: ['MIT', 'Apache', 'Mozilla', 'GNU', 'Boost', 'ISC']
         },
         {
             type: 'input',
